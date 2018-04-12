@@ -1,0 +1,181 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    tools:context="com.forestzhu.a2017map.Main1Activity"
+    tools:ignore="MergeRootFrame">
+
+    <RelativeLayout android:layout_height="50dp"
+         android:layout_width="match_parent"
+         android:background="#008EEF"
+        >
+        <Button
+            android:id="@+id/backmap"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:background="#008EEF"
+            android:paddingLeft="20dp"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:drawableLeft="@drawable/btn_back_2"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="大工校车"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <view.CircleImageView
+            android:id="@+id/picture"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            app:border_width="2dp"
+            android:src="@drawable/school_target"
+            app:border_color="#ccc"
+            android:layout_marginLeft="8dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        >
+
+        <ImageButton
+            android:id="@+id/photo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:src="@drawable/school_background"
+            android:scaleType="centerCrop"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:background="@android:color/darker_gray"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:background="@android:color/white"
+        android:layout_weight="3"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        >
+        <RadioGroup
+            android:id="@+id/radiogrop"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="8dp"
+            >
+
+            <RadioButton
+                android:id="@+id/B_K"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+<<<<<<< HEAD
+                android:text="学生宿舍-教学区"
+=======
+                android:text="本部-开发区校区"
+>>>>>>> 9ffe6332a5004bb42d1eebe66de32ca94f7a88ab
+                android:textSize="18sp"
+                android:paddingLeft="30dp"
+                />
+
+            <RadioButton
+                android:id="@+id/K_B"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+<<<<<<< HEAD
+                android:text="教学区-学生宿舍"
+=======
+                android:text="开发区校区-本部"
+>>>>>>> 9ffe6332a5004bb42d1eebe66de32ca94f7a88ab
+                android:textSize="18sp"
+                android:paddingLeft="30dp"
+                />
+        </RadioGroup>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        >
+
+        <TextView
+            android:text="车辆状态"
+            android:textSize="18sp"
+           android:paddingLeft="12dp"
+            android:textColor="#000000"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignBaseline="@+id/car_state"
+            android:layout_alignBottom="@+id/car_state"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:paddingRight="16dp"
+            android:text="未发车"
+            android:textColor="#000000"
+            android:id="@+id/car_state"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="18sp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:background="@android:color/darker_gray"
+        android:layout_weight="0.035"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:background="@android:color/white"
+        android:layout_weight="6"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        >
+
+        <Button
+            android:id="@+id/car_change"
+            android:text="出发"
+            android:layout_height="110dp"
+            android:layout_width="110dp"
+            android:background="@drawable/rollbutton_shape"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</LinearLayout>

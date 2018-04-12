@@ -1,0 +1,51 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 24
+<<<<<<< HEAD
+    buildToolsVersion '25.0.0'
+=======
+    buildToolsVersion "24.0.3"
+>>>>>>> 9ffe6332a5004bb42d1eebe66de32ca94f7a88ab
+    defaultConfig {
+        applicationId "com.forestzhu.a2017map"
+        minSdkVersion 14//15
+        targetSdkVersion 24
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+<<<<<<< HEAD
+    sourceSets {
+        main {
+            jniLibs.srcDir 'libs'
+        }
+    }
+=======
+>>>>>>> 9ffe6332a5004bb42d1eebe66de32ca94f7a88ab
+}
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+<<<<<<< HEAD
+    compile files('libs/BaiduLBS_Android.jar')
+    compile files('libs/BaiduTraceSDK_v3_0_5.jar')
+=======
+    compile project(path: ':LibMarsdaemon')
+    compile files('libs/baidumapapi_base_v4_0_0.jar')
+    compile files('libs/baidumapapi_map_v4_0_0.jar')
+    compile files('libs/BaiduTraceSDK_v2_1_15.jar')
+    compile files('libs/locSDK_6.13.jar')
+>>>>>>> 9ffe6332a5004bb42d1eebe66de32ca94f7a88ab
+    compile 'com.android.support:appcompat-v7:24.2.1'
+    compile 'com.android.support:design:24.2.1'
+    testCompile 'junit:junit:4.12'
+}

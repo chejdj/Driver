@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.forestzhu.a2017map">
+<<<<<<< HEAD
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+=======
+     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+>>>>>>> 9ffe6332a5004bb42d1eebe66de32ca94f7a88ab
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+<<<<<<< HEAD
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <application
+        android:name=".MyApplication1"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_explore_blue_50_48dp"
+        android:label="@string/app_name"
+        android:persistent="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="Tr0pyFeGYzcMD7gNUckbHiKscFYP7T9k"/>
+=======
+
+    <application
+        android:name=".MyApplication1"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="Tr0pyFeGYzcMD7gNUckbHiKscFYP7T9k" />
+
+>>>>>>> 9ffe6332a5004bb42d1eebe66de32ca94f7a88ab
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"></activity>
+
+        <service
+            android:name="com.baidu.trace.LBSTraceService"
+            android:enabled="true"
+<<<<<<< HEAD
+            android:process=":remote"/>
+        <service
+            android:name=".Jobservice"
+            android:exported="true"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            />
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote"/>
+=======
+            android:exported="false" />
+        <service
+            android:name=".Jobservice"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true" />
+>>>>>>> 9ffe6332a5004bb42d1eebe66de32ca94f7a88ab
+        <service
+            android:name=".ForegroundService"
+            android:enabled="true"
+            android:exported="false"
+            android:process=".process1"></service>
+        <service
+            android:name=".ForegroundService$MonitorInnerService"
+            android:enabled="true"
+            android:exported="false"
+            android:process=":process1" />
+        <service
+            android:name=".MointerReceive$WakeupInnerService"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name=".MointerReceive$WakeupService"
+            android:enabled="true"
+            android:exported="false" />
+<<<<<<< HEAD
+=======
+
+>>>>>>> 9ffe6332a5004bb42d1eebe66de32ca94f7a88ab
+        <receiver
+            android:name=".MointerReceive"
+            android:enabled="true"
+            android:exported="false"
+            android:process=":process1">
+            <intent-filter>
+                <action android:name="com.baidu.track.WAKE_UP" />
+                <action android:name="com.baidu.track.SLEEP" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.net.conn.ACCESS_NETWORK_STATE" />
+                <action android:name="android.net.conn.CHANGE_WIFI_STATE" />
+                <action android:name="android.net.conn.ACCESS_WIFI_STATE" />
+                <action android:name="android.intent.action.MEDIA_MOUNTED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+                <action android:name="android.intent.action.SCREEN_OFF" />
+                <action android:name="android.intent.action.SCREEN_ON" />
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
+<<<<<<< HEAD
+=======
+        <service
+            android:name=".Service1"
+            android:exported="false"
+            android:process=".daemon" />
+
+        <receiver
+            android:name=".Receive1"
+            android:process=".process1" />
+        <receiver
+            android:name=".Receive2"
+            android:process=".daemon" />
+
+>>>>>>> 9ffe6332a5004bb42d1eebe66de32ca94f7a88ab
+        <activity
+            android:name=".KeepAliveActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize|navigation|keyboard"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:finishOnTaskLaunch="false"
+            android:launchMode="singleInstance"
+            android:theme="@style/LiveActivity" />
+        <activity
+            android:name=".informaTion"
+            android:label="@string/information"></activity>
+        <activity
+            android:name=".Main1Activity"
+            android:label="@string/title_activity_main1"></activity>
+        <activity
+            android:name="view.Login"
+            android:label="@string/log_in">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+<<<<<<< HEAD
+=======
+
+>>>>>>> 9ffe6332a5004bb42d1eebe66de32ca94f7a88ab
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LogoutActivity"
+            android:label="@string/title_activity_logout"
+<<<<<<< HEAD
+           ></activity>
+        <activity android:name=".OfflineMap"
+            android:label="offline"></activity>
+=======
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+>>>>>>> 9ffe6332a5004bb42d1eebe66de32ca94f7a88ab
+    </application>
+
+</manifest>

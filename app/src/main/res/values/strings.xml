@@ -1,0 +1,31 @@
+<resources>
+<<<<<<< HEAD
+    <string name="app_name">司机端</string>
+=======
+    <string name="app_name">Map2017</string>
+>>>>>>> 9ffe6332a5004bb42d1eebe66de32ca94f7a88ab
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="information">666</string>
+    <string name="satitle">卫星地图</string>
+    <string name="normal">普通地图</string>
+    <string name="search">寻路模式</string>
+    <string name="information01">208实验室安卓组</string>
+    <string name="picture1">寻路</string>
+    <string name="picture2">卫星</string>
+    <string name="picture3">返回</string>
+    <string name="picture4">信息</string>
+    <string name="title_activity_main1">MainActivity</string>
+<<<<<<< HEAD
+    <string name="log_in">司机端</string>
+    <drawable name="normal">#008EEF</drawable>
+    <drawable name="pressed">#99cccccc</drawable>
+    <string name="title_activity_logout">LogoutActivity</string>
+    <drawable name="normal_no">#ffffff</drawable>
+=======
+    <string name="log_in">map2017</string>
+    <drawable name="normal">#008EEF</drawable>
+    <drawable name="pressed">#99cccccc</drawable>
+    <string name="title_activity_logout">LogoutActivity</string>
+>>>>>>> 9ffe6332a5004bb42d1eebe66de32ca94f7a88ab
+</resources>
